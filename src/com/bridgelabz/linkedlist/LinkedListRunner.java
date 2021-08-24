@@ -7,9 +7,12 @@ public class LinkedListRunner {
 		MyNode <Integer> thirdNode = new MyNode<Integer>(70);
 		
 		MyLinkedList linkedlist = new MyLinkedList();
-		linkedlist.add(firstNode);
-		linkedlist.add(secondNode);
-		linkedlist.add(thirdNode);
+//		linkedlist.add(firstNode);
+//		linkedlist.add(secondNode);
+//		linkedlist.add(thirdNode);
+		linkedlist.append(firstNode);
+		linkedlist.append(secondNode);
+		linkedlist.append(thirdNode);
 		linkedlist.print();
 	}
 }
