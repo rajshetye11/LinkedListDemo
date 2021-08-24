@@ -13,6 +13,10 @@ public class LinkedListRunner {
 		linkedlist.append(firstNode);	
 		linkedlist.append(thirdNode);
 		linkedlist.insert(secondNode);
+		System.out.println("Before Deleting first node");
+		linkedlist.print();
+		System.out.println("After Deleting first node");
+		linkedlist.pop(firstNode);
 		linkedlist.print();
 	}
 }
