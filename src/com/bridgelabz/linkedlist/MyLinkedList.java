@@ -40,9 +40,19 @@ public class MyLinkedList {
 		newNode.setNext(tail);		
 	}
 	
-	public void pop(INode newNode) {
+	public void pop() {
 		INode tempNode = head.getNext();
 		head = tempNode;	
+	}
+	
+	public void popLast() {
+		INode tempNode = head ;
+		while (tempNode.getNext() != tail) {
+			tempNode = tempNode.getNext();
+		}
+		tail = tempNode;
+		tempNode.setNext(null);
+		
 	}
 	
 	public void print() {

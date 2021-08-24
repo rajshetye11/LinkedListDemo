@@ -16,7 +16,11 @@ public class LinkedListRunner {
 		System.out.println("Before Deleting first node");
 		linkedlist.print();
 		System.out.println("After Deleting first node");
-		linkedlist.pop(firstNode);
+		linkedlist.pop();
 		linkedlist.print();
+		System.out.println("After Deleting last node");
+		linkedlist.popLast();
+		linkedlist.print();
+		
 	}
 }
