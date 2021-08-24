@@ -12,10 +12,10 @@ public class LinkedListRunner {
 		linkedlist.add(secondNode);
 		linkedlist.add(thirdNode);
 		
-		linkedlist.print();
-//		linkedlist.search(30);
 		linkedlist.insertElement(secondNode,fourthNode);
-		System.out.println("After adding 40");
+		linkedlist.print();
+		System.out.println("After deleting 40");
+		linkedlist.delete(40);
 		linkedlist.print();
 		
 	}

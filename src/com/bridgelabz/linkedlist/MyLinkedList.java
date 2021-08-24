@@ -66,6 +66,19 @@ public class MyLinkedList<K> {
 		}
 	}
 	
+	
+	public void delete(K key) {
+		INode tempNode = head;
+		while (tempNode.getNext() != null) {
+			if ((tempNode.getNext().getKey()).equals(key)) {
+				INode tempLast = tempNode.getNext().getNext();
+				tempNode.setNext(tempLast);
+				break;
+			}
+			tempNode = tempNode.getNext();
+		}
+	}
+	
 	public void insertElement(INode presentNode,INode newNode) {
 		INode tempNode = head;
 		while (tempNode != tail) {
