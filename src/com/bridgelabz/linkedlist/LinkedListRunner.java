@@ -7,20 +7,12 @@ public class LinkedListRunner {
 		MyNode <Integer> thirdNode = new MyNode<Integer>(70);
 		
 		MyLinkedList linkedlist = new MyLinkedList();
-//		linkedlist.add(firstNode);
-//		linkedlist.add(secondNode);
-//		linkedlist.add(thirdNode);
-		linkedlist.append(firstNode);	
-		linkedlist.append(thirdNode);
-		linkedlist.insert(secondNode);
-		System.out.println("Before Deleting first node");
+		linkedlist.add(firstNode);
+		linkedlist.add(secondNode);
+		linkedlist.add(thirdNode);
+		
 		linkedlist.print();
-		System.out.println("After Deleting first node");
-		linkedlist.pop();
-		linkedlist.print();
-		System.out.println("After Deleting last node");
-		linkedlist.popLast();
-		linkedlist.print();
+		linkedlist.search(30);
 		
 	}
 }
