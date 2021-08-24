@@ -10,9 +10,9 @@ public class LinkedListRunner {
 //		linkedlist.add(firstNode);
 //		linkedlist.add(secondNode);
 //		linkedlist.add(thirdNode);
-		linkedlist.append(firstNode);
-		linkedlist.append(secondNode);
+		linkedlist.append(firstNode);	
 		linkedlist.append(thirdNode);
+		linkedlist.insert(secondNode);
 		linkedlist.print();
 	}
 }
