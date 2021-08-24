@@ -66,6 +66,17 @@ public class MyLinkedList<K> {
 		}
 	}
 	
+	public void insertElement(INode presentNode,INode newNode) {
+		INode tempNode = head;
+		while (tempNode != tail) {
+			if(tempNode.getKey().equals(presentNode.getKey())) {
+				tempNode.setNext(newNode);
+				newNode.setNext(tail);
+			}
+			tempNode = tempNode.getNext();
+		}
+	}
+	
 	public void print() {
 		INode tempNode = head;
 		
