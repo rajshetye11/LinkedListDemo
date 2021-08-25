@@ -12,5 +12,7 @@ public class StackRunner {
 			linkedlist.push(thirdNode);
 			System.out.println("Stack");
 			linkedlist.print();
+			linkedlist.peek();
+			linkedlist.print();
 		}
 }

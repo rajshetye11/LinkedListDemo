@@ -28,6 +28,18 @@ public class MyLinkedList<K> {
 		
 	}
 	
+	public void pop() {
+		System.out.println(head.getKey()+" Popped");
+		INode temp = head.getNext();
+		head = temp;
+	}
+	
+	public void peek() {
+		while(head!=null) {
+			System.out.println(head.getKey());
+			pop();
+		}
+	}
 	
 	
 	public void print() {
