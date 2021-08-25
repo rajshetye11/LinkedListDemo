@@ -28,13 +28,14 @@ public class MyLinkedListQueue<K> {
 		
 	}
 	
+	
 	public void pop() {
 		System.out.println(head.getKey()+" Popped");
 		INode temp = head.getNext();
 		head = temp;
 	}
 	
-	public void peek() {
+	public void deQueue() {
 		while(head!=null) {
 			System.out.println(head.getKey());
 			pop();

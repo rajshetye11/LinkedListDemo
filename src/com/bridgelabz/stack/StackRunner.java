@@ -13,6 +13,7 @@ public class StackRunner {
 			linkedlistqueue.enQueue(thirdNode);
 			System.out.println("Queue");
 			linkedlistqueue.print();
-			
+			linkedlistqueue.deQueue();
+			linkedlistqueue.print();
 		}
 }
