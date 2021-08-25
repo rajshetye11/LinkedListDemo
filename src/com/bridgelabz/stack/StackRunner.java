@@ -7,12 +7,12 @@ public class StackRunner {
 			MyNode<Integer> thirdNode = new MyNode<Integer>(70);
 			
 			MyLinkedList linkedlist = new MyLinkedList();
-			linkedlist.push(firstNode);
-			linkedlist.push(secondNode);
-			linkedlist.push(thirdNode);
-			System.out.println("Stack");
-			linkedlist.print();
-			linkedlist.peek();
-			linkedlist.print();
+			MyLinkedListQueue linkedlistqueue = new MyLinkedListQueue();
+			linkedlistqueue.enQueue(firstNode);
+			linkedlistqueue.enQueue(secondNode);
+			linkedlistqueue.enQueue(thirdNode);
+			System.out.println("Queue");
+			linkedlistqueue.print();
+			
 		}
 }
